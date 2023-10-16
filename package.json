@@ -1,0 +1,27 @@
+{
+  "name": "tinderhabilidades",
+  "version": "1.0.0",
+  "description": "Proyecto de Tinder para habilidades personales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "knex init",
+    "knex_migrations": "knex migrate:make calificaciones && knex migrate:make estados && knex migrate:make habilidades && knex migrate:make personas && knex migrate:make roles && knex migrate:make servicios && knex migrate:make trabajos && knex migrate:make usuarios",
+    "knex_latest": "knex migrate:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arq987/TinderHabilidades.git"
+  },
+  "author": "Alexander Romero Quiroga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arq987/TinderHabilidades/issues"
+  },
+  "homepage": "https://github.com/arq987/TinderHabilidades#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3"
+  }
+}

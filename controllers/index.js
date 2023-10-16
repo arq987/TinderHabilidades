@@ -1,0 +1,1 @@
+const CalificacionesController = require('./CalificacionesController');
