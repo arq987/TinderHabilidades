@@ -1,9 +1,9 @@
 const express = require('express');
-
 const router = express.Router();
+const { HabilidadesController } = require('./controllers');
 
 //Crear 
-router.post('/', (req,res) => res.send({ message: "Se realizó la creación"}));
+router.post('/', HabilidadesController.createHabilidad);
 
 //Consultar todos
 router.get('/', (req,res) => res.send({ message: "Se realizó la consulta"}));

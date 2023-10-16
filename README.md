@@ -1,2 +1,2 @@
-# Tinder para Habilidades Prsonales
+# Tinder para Habilidades Personales
 Proyecto para un Tinder para Habilidades Personales

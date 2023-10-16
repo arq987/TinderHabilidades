@@ -1,9 +1,9 @@
 const express = require('express');
-
 const router = express.Router();
+const { RolesController } = require('./controllers');
 
 //Crear 
-router.post('/', (req,res) => res.send({ message: "Se realizó la creación"}));
+router.post('/', RolesController.createRol);
 
 //Consultar todos
 router.get('/', (req,res) => res.send({ message: "Se realizó la consulta"}));

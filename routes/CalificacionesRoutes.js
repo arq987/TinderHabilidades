@@ -1,21 +1,21 @@
 const express = require('express');
 const router = express.Router();
-const { CalificacionesController } = require('./controllers');
+const { CalificacionesController } = require('../controllers');
 
 //Crear 
 router.post('/', CalificacionesController.createCalificacion);
 
 //Consultar todos
-router.get('/', (req,res) => res.send({ message: "Se realizó la consulta"}));
+router.get('/', CalificacionesController.getAllCalificacion);
 
 //Consultar por id
-router.get('/:id', (req,res) => res.send({ message: "Se realizó la consulta de un único registro"}));
+router.get('/:id', CalificacionesController.getCalificacion);
 
 //Actualizar
-router.put('/:id', (req,res) => res.send({ message: "Se actualizó el registro"}));
-router.patch('/:id', (req,res) => res.send({ message: "Se actualizó la información"}));
+router.put('/:id', CalificacionesController.putCalificacion);
+router.patch('/:id', CalificacionesController.patchCalificacion);
 
 //Eliminar
-router.delete('/:id', (req,res) => res.send({ message: "Se realizó la creación"}));
+router.delete('/:id', CalificacionesController.deleteCalificacion);
 
 module.exports = router;

@@ -1,9 +1,9 @@
 const express = require('express');
-
 const router = express.Router();
+const { UsuariosController } = require('./controllers');
 
 //Crear 
-router.post('/', (req,res) => res.send({ message: "Se realizó la creación"}));
+router.post('/', UsuariosController.createUsuario);
 
 //Consultar todos
 router.get('/', (req,res) => res.send({ message: "Se realizó la consulta"}));
