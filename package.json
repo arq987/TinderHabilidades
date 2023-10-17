@@ -4,6 +4,7 @@
   "description": "Proyecto de Tinder para habilidades personales",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "knex": "knex init",
     "knex_migrations": "knex migrate:make calificaciones && knex migrate:make estados && knex migrate:make habilidades && knex migrate:make personas && knex migrate:make roles && knex migrate:make servicios && knex migrate:make trabajos && knex migrate:make usuarios",
@@ -20,8 +21,22 @@
   },
   "homepage": "https://github.com/arq987/TinderHabilidades#readme",
   "dependencies": {
+    "auth0": "^4.0.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-openid-connect": "^2.17.0",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
     "knex": "^3.0.1",
-    "pg": "^8.11.3"
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
   }
 }
